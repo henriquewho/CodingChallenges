@@ -1,2 +1,2 @@
-Some coding chalenges when learning C++
-- Email: henriquegfonseca89@gmail.com
+Some coding chalenges while learning C++
+- henriquegfonseca89@gmail.com
