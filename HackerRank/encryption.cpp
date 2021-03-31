@@ -50,8 +50,4 @@ int main(){
     cout <<  encryption(str3) << endl; 
     cout <<  encryption(str4) << endl; 
     cout <<  encryption(str5) << endl; 
-
-
-    //int v = str2.size(); 
-    //cout << v << " " << floor(sqrt(v)) << " " << ceil(sqrt(v)) << endl;
 }
