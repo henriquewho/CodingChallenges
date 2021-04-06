@@ -1,7 +1,6 @@
 /* https://app.codesignal.com/arcade/intro/level-2/2mxbGwLzvkTCKAJMG
 
 Given a sequence of integers as an array, determine whether is possible to obtain a strictly increasing seq by removing no more than one element from the array. No sorting allowed, so you should consider the default order of the elements. 
-
 */
 
 #include <iostream> 
@@ -10,7 +9,7 @@ Given a sequence of integers as an array, determine whether is possible to obtai
 #include <climits>
 using namespace std; 
 
-// solution usng three indexes to compare the elements in trios.
+// Solution usng three indexes to compare the elements in trios.
 bool almostIncreasingSequence(vector<int> arr) {
     int i1=0, i2=1, i3=2, count=0; 
 
@@ -43,8 +42,8 @@ int main(){
     vector<int> sequence1 {10, 1, 2, 3, 4, 5};
     vector<int> sequence2 {40, 50, 60, 10, 20, 30};
     vector<int> sequence3 {1, 2, 3, 8, 3, 4, 5};
-    vector<int> sequence4 {1, 2, 3, 4, 3, 6};  // 3 8 3 
-    vector<int> sequence5 {1,2,5,3,5};           // 2 8 3
+    vector<int> sequence4 {1, 2, 3, 4, 3, 6}; 
+    vector<int> sequence5 {1,2,5,3,5};          
     vector<int> sequence6 {1,2,1,2};
 
     cout << "Result: " << almostIncreasingSequence(sequence1) << endl; 

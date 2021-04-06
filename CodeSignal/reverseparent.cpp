@@ -9,7 +9,9 @@ Write a function that reverse chars between parentheses in the input string. The
 #include <stack> 
 using namespace std; 
 
-/* Only passes one time in the string, O(N). Uses a stack to stack the '(' chars. If a ')' is found, reverse from the last '(' and then has to do i-=2 to account for the two chars removed. Used the built in reverse() from <algorithm> for simplicity but could have implemented it as well.
+/* Only passes one time in the string, O(N). Uses a stack to stack the '(' chars. If a ')' is found, 
+reverse from the last '(' and then has to do i-=2 to account for the two chars removed. 
+Used the built in reverse() from <algorithm> for simplicity.
 */
 string reverseInParentheses(string inputString) {
     stack<int> stack;

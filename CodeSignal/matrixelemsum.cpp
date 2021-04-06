@@ -1,6 +1,7 @@
 /* https://app.codesignal.com/arcade/intro/level-2/xskq4ZxLyqQMCLshr
 
-Given a rectangular matrix (h can / will be different from w) of integers where each value represents  a room cost, return the total sum of all rooms that don't appear below a 0. 
+Given a rectangular matrix (h can / will be different from w) of integers where each value represents  a room cost, 
+return the total sum of all rooms that don't appear below a 0. 
 */
 
 #include <iostream> 

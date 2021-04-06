@@ -1,5 +1,9 @@
 /* https://app.codesignal.com/arcade/intro/level-2/yuGuHvcCaFCKk56rJ
 
+Calculate the shape of the polygon given n.  
+1       2
+       222
+        2           and so on 
 */
 
 #include <iostream>
