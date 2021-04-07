@@ -1,7 +1,10 @@
 #ifndef LLIST_H
 #define LLIST_H
 
-// define the class Linked List, with a nested class Node
+// Define the class Linked List, with a nested class Node
+// The LL has two sentinel nodes, tail and head to make the
+// coding simpler. The LList can hold any primitive type. 
+
 
 template <typename Object> 
 class List {
