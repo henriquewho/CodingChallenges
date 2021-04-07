@@ -4,7 +4,7 @@
 // Define the class Linked List, with a nested class Node
 // The LL has two sentinel nodes, tail and head to make the
 // coding simpler. The LList can hold any primitive type. 
-
+// Next steps = implement operator[] and take care of the memory leaks
 
 template <typename Object> 
 class List {
@@ -50,16 +50,27 @@ public:
         tail->prev = a;
     }
 
-    Object pop_front(){
+    void pop_front(){
         theSize--; 
+        std::cout << "Popping: " << head->next->data << std::endl; 
+
         head->next->next->prev = head; 
         head->next = head->next->next; 
+        
     }
 
-    Object pop_back(){
+    void pop_back(){
         theSize--; 
+        std::cout << "Popping: " << tail->prev->data << std::endl; 
+
         tail->prev->prev->next = tail; 
         tail->prev = tail->prev->prev;
+    }
+
+    void clear(){
+        theSize=0; 
+        head->next = tail; 
+        tail->prev = head;
     }
 
     Object back(){
@@ -71,6 +82,10 @@ public:
     }
 
     int size() const {return theSize;}
+
+    bool isEmpty(){
+        return (theSize==0) ? true: false; 
+    }
 
     void print(){
         auto temp = new Node;

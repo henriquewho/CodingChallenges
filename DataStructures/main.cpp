@@ -35,6 +35,12 @@ void printLList(){
 
     cout << "Printing: "; a.print(); 
 
+    cout << "Is empty? " << a.isEmpty() << endl; 
+
+    while (a.isEmpty()!=1 ) { a.pop_front(); }
+
+    cout << "Is empty? " << a.isEmpty() << endl; 
+
 }
 
 int main(){
