@@ -4,7 +4,7 @@
 // Define the class Linked List, with a nested class Node
 // The LL has two sentinel nodes, tail and head to make the
 // coding simpler. The LList can hold any primitive type. 
-// Next steps = implement operator[] and take care of the memory leaks
+// Next steps = take care of the memory leaks
 
 template <typename Object> 
 class List {
@@ -97,19 +97,19 @@ public:
         }        
     }
 
-        Object operator[](const int n){
-        if (n==0) {
-            return head->next->data; 
-        } else if (n==theSize-1){
-            return tail->prev->data; 
-        } else {
-            auto temp = head->next; 
-            for (int i{}; i<n; i++){
-                temp=temp->next; 
-            }
-            return temp->data; 
+    Object operator[](const int n){
+    if (n==0) {
+        return head->next->data; 
+    } else if (n==theSize-1){
+        return tail->prev->data; 
+    } else {
+        auto temp = head->next; 
+        for (int i{}; i<n; i++){
+            temp=temp->next; 
         }
+        return temp->data; 
     }
+}
 };
 
 #endif
