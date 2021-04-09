@@ -96,6 +96,20 @@ public:
             temp = temp->next; 
         }        
     }
+
+        Object operator[](const int n){
+        if (n==0) {
+            return head->next->data; 
+        } else if (n==theSize-1){
+            return tail->prev->data; 
+        } else {
+            auto temp = head->next; 
+            for (int i{}; i<n; i++){
+                temp=temp->next; 
+            }
+            return temp->data; 
+        }
+    }
 };
 
 #endif

@@ -3,6 +3,15 @@
 #include "LList.h"
 using namespace std; 
 
+void testOperatorLList(){
+    List<int> lst; 
+    for (int i{}; i<5; i++){
+        lst.push_front(i*2);
+    }
+
+    cout << lst[2];
+}
+
 void testLList(){
     List<int> a;
 
@@ -45,5 +54,6 @@ void printLList(){
 
 int main(){
     //testLList();
-    printLList(); 
+    //printLList(); 
+    testOperatorLList(); 
 }
