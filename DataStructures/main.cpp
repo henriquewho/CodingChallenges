@@ -9,7 +9,9 @@ void testOperatorLList(){
         lst.push_front(i*2);
     }
 
-    cout << lst[2];
+    cout << "Using the opreator[]: " << lst[2] << endl;
+
+    cout << "Printing the LList: \n"; lst.print(); 
 }
 
 void testLList(){
